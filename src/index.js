@@ -9,6 +9,7 @@ import createStore from "./helpers/createStore";
 
 const app = express();
 
+// TODO - change this
 app.use(
   "/api",
   proxy(config.baseURL, {
@@ -18,6 +19,7 @@ app.use(
     }
   })
 );
+
 app.use(express.static("public"));
 app.get("*", (req, res) => {
   const store = createStore(req);

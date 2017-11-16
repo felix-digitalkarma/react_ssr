@@ -1,5 +1,5 @@
 const config = {
-  baseURL: "http://react-ssr-api.herokuapp.com"
+  baseURL: "<BASE URL />"
 };
 
 export default config;
